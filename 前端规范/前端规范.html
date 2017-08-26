@@ -1,0 +1,1513 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  max-width: 980px;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 45px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>前端规范</title></head><body><article class="markdown-body"><h1 id="_1"><strong>前端规范</strong></h1>
+<hr />
+<ul>
+<li>前端普适性规范</li>
+<li>HTML规范</li>
+<li>css规范</li>
+<li>js规范</li>
+</ul>
+<hr />
+<h1 id="_2"><a name="user-content-_2" href="#_2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>前端普适性规范</h1>
+<h2 id="_3"><a name="user-content-_3" href="#_3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>黄金定律</h2>
+<p>不管有多少人共同参与同一项目，一定要确保每一行代码都像是同一个人编写的。</p>
+<h2 id="_4"><a name="user-content-_4" href="#_4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>项目命名</h2>
+<p>项目名全部采用小写方式，以中划线分隔，禁止驼峰式命名。比如：my-project-name</p>
+<h2 id="_5"><a name="user-content-_5" href="#_5" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>文件命名</h2>
+<p>文件命名参照项目命名规则。比如: error-report.html</p>
+<p>有复数结构时，要采用复数命名法，比如： scripts, styles, images, data-models</p>
+<p>文件名中只可由小写英文字母 a~z 、排序数字 0~9 或间隔符 - 组成，禁止包含特殊符号，比如空格、$ 等</p>
+<p>为了醒目，某些说明文件的文件名，可以使用大写字母，比如: README, LICENSE</p>
+<p>为更好的表达语义，文件名使用英文名词命名，或英文简写。</p>
+<p>不允许命名带有广告等英文的单词，例如ad,adv,adver,advertising，防止该模块被浏览器当成垃圾广告过滤掉。任何文件的命名均如此。</p>
+<p>文件常用命名: </p>
+<ul>
+<li>index.shtml 引导页&amp;首页</li>
+<li>main.shtml 首页</li>
+<li>download.shtml 下载页面</li>
+<li>act.html 活动列表页面</li>
+<li>
+<p>video.html 视频</p>
+</li>
+<li>
+<p>base.css 基本样式</p>
+</li>
+<li>layout.css 框架布局</li>
+<li>module.css 模块样式</li>
+<li>global.css 全局样式</li>
+<li>font.css 字体样式</li>
+<li>index.css 首页样式</li>
+<li>print.css 打印样式</li>
+</ul>
+<h1 id="html"><a name="user-content-html" href="#html" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>HTML 规范</h1>
+<h2 id="_6"><a name="user-content-_6" href="#_6" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>语法</h2>
+<p>使用四个空格的缩进，这是保证代码在各种环境下显示一致的唯一方式。</p>
+<p>嵌套的节点应该缩进（四个空格）。</p>
+<p>在属性上，使用双引号，不要使用单引号。</p>
+<p>不要在自动闭合标签结尾处使用斜线 <code>/</code> - HTML5 规范 指出他们是可选的。</p>
+<pre><code>&lt;img src=&quot;images/logo.png&quot; alt=&quot;Company&quot;&gt;
+</code></pre>
+
+<p>不要忽略可选的关闭标签（例如，<code>&lt;/li&gt;</code> 和 <code>&lt;/body&gt;</code>）。</p>
+<h2 id="html5-doctype"><a name="user-content-html5-doctype" href="#html5-doctype" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>HTML5 doctype</h2>
+<p>在每个 HTML 页面开头使用这个简单地 doctype 来启用标准模式，使其每个浏览器中尽可能一致的展现。</p>
+<p>虽然 doctype 不区分大小写，但是按照惯例，doctype 大写</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+</code></pre>
+
+<h2 id="_7"><a name="user-content-_7" href="#_7" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>语言属性</h2>
+<pre><code>&lt;html lang=&quot;en&quot;&gt;
+
+&lt;/html&gt;
+</code></pre>
+
+<h2 id="_8"><a name="user-content-_8" href="#_8" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>字符编码</h2>
+<p>通过明确声明字符编码，能够确保浏览器快速并容易的判断页面内容的渲染方式。这样<br />
+做的好处是，可以避免在 HTML 中使用字符实体标记（character entity），从而全部与<br />
+文档编码一致（一般采用 UTF-8 编码）。</p>
+<pre><code>&lt;meta charset=&quot;UTF-8&quot;&gt;
+</code></pre>
+
+<h2 id="ie"><a name="user-content-ie" href="#ie" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>IE 兼容模式</h2>
+<p>IE 支持通过特定的 <meta> 标签来确定绘制当前页面所应该采用的 IE 版本。除非有强烈<br />
+的特殊需求，否则最好是设置为 edge mode，从而通知 IE 采用其所支持的最新的模<br />
+式。</p>
+<pre><code>&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=Edge&quot;&gt;
+</code></pre>
+
+<h2 id="_9"><a name="user-content-_9" href="#_9" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>响应式</h2>
+<pre><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+</code></pre>
+
+<h2 id="css-javascript"><a name="user-content-css-javascript" href="#css-javascript" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>引入 CSS 和 JavaScript</h2>
+<p>根据 HTML5 规范, 通常在引入 CSS 和 JavaScript 时不需要指明 type，因为 text/css 和 text/javascript 分别是他们的默认值。</p>
+<pre><code>&lt;!-- External CSS --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;code-guide.css&quot;&gt;
+
+&lt;!-- In-document CSS --&gt;
+&lt;style&gt;
+    /* ... */
+&lt;/style&gt;
+
+&lt;!-- JavaScript --&gt;
+&lt;script src=&quot;code-guide.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<h2 id="_10"><a name="user-content-_10" href="#_10" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>实用高于完美</h2>
+<p>尽量遵循 HTML 标准和语义，但是不应该以浪费实用性作为代价。任何时候都要用尽量小的复杂度和尽量少的标签来解决问题。</p>
+<h2 id="_11"><a name="user-content-_11" href="#_11" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>减少标签数量</h2>
+<p>在编写 HTML 代码时，需要尽量避免多余的父节点。很多时候，需要通过迭代和重构来使 HTML 变得更少。 参考下面的示例:</p>
+<pre><code>&lt;!-- Not so great --&gt;
+&lt;span class=&quot;avatar&quot;&gt;
+    &lt;img src=&quot;...&quot;&gt;
+&lt;/span&gt;
+
+&lt;!-- Better --&gt;
+&lt;img class=&quot;avatar&quot; src=&quot;...&quot;&gt;
+</code></pre>
+
+<h2 id="_12"><a name="user-content-_12" href="#_12" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>属性顺序</h2>
+<p>HTML 属性应该按照特定的顺序出现以保证易读性。</p>
+<ol>
+<li>class</li>
+<li>id</li>
+<li>name</li>
+<li>data-*</li>
+<li>src, for, type, href, value , max-length, max, min, pattern</li>
+<li>placeholder, title, alt</li>
+<li>aria-*, role</li>
+<li>required, readonly, disabled</li>
+</ol>
+<p>class 是为高可复用组件设计的，理论上他们应处在第一位。id 更加具体而且应该尽量少使用（例如, 页内书签），所以他们处在第二位。</p>
+<h2 id="boolean"><a name="user-content-boolean" href="#boolean" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Boolean 属性</h2>
+<p>Boolean 属性指不需要声明取值的属性。XHTML 需要每个属性声明取值，但是 HTML5 并不需要。</p>
+<p>一个元素中 Boolean 属性的存在表示取值 true，不存在则表示取值 false。</p>
+<p>简而言之，不要为 Boolean 属性添加取值。</p>
+<pre><code>&lt;input type=&quot;text&quot; disabled&gt;
+</code></pre>
+
+<h1 id="css"><a name="user-content-css" href="#css" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>CSS 规范</h1>
+<h2 id="_13"><a name="user-content-_13" href="#_13" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>语法</h2>
+<p>使用四个空格的缩进，这是保证代码在各种环境下显示一致的唯一方式。</p>
+<p>使用组合选择器时，保持每个独立的选择器占用一行。</p>
+<p>为了代码的易读性，在每个声明的左括号前增加一个空格。</p>
+<p>声明块的右括号应该另起一行。</p>
+<p>每条声明 : 后应该插入一个空格。</p>
+<p>每条声明应该只占用一行来保证错误报告更加准确。</p>
+<p>所有声明应该以分号结尾。虽然最后一条声明后的分号是可选的，但是如果没有他，你的代码会更容易出错。</p>
+<p>逗号分隔的取值，都应该在逗号之后增加一个空格。</p>
+<p>所有的十六进制值都应该使用小写字母，例如 #fff。因为小写字母有更多样的外形，在浏览文档时，他们能够更轻松的被区分开来。</p>
+<p>尽可能使用短的十六进制数值，例如使用 #fff 替代 #ffffff。</p>
+<p>为选择器中的属性取值添加引号，例如 input[type=&rdquo;text&rdquo;]。 他们只在某些情况下可有可无，所以都使用引号可以增加一致性。</p>
+<p>不要为 0 指明单位，比如使用 margin: 0; 而不是 margin: 0px;。</p>
+<pre><code class="css">/* Bad CSS */
+.selector, .selector-secondary, .selector[type=text] {
+    margin: 0px 0px 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 2px #CCC, inset 0 1px 0 #FFFFFF
+}
+
+/* Good CSS */
+.selector,
+.selector-secondary,
+.selector[type=&quot;text&quot;] {
+    margin-bottom: 15px;
+    background-color: rgba(0,0,0,.5);
+    box-shadow: 0 1px 2px #ccc, inset 0 1px 0 #fff;
+}
+</code></pre>
+
+<h2 id="_14"><a name="user-content-_14" href="#_14" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>声明顺序</h2>
+<p>相关的属性声明应该以下面的顺序分组处理：</p>
+<ol>
+<li>Positioning</li>
+<li>Box model 盒模型</li>
+<li>Typographic 排版</li>
+<li>Visual 外观</li>
+</ol>
+<p>Positioning 处在第一位，因为他可以使一个元素脱离正常文本流，并且覆盖盒模型相关的样式。盒模型紧跟其后，因为他决定了一个组件的大小和位置。</p>
+<p>其他属性只在组件内部起作用或者不会对前面两种情况的结果产生影响，所以他们排在后面。<br />
+这块只是建议， 会采用postcss处理兼容和排序等后置处理。</p>
+<pre><code class="css">.declaration-order {
+    /* Positioning */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+
+    /* Box-model */
+    display: block;
+    float: right;
+    width: 100px;
+    height: 100px;
+
+    /* Typography */
+    font: normal 13px &quot;Helvetica Neue&quot;, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    text-align: center;
+
+    /* Visual */
+    background-color: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+
+    /* Misc */
+    opacity: 1;
+}
+</code></pre>
+
+<h2 id="import"><a name="user-content-import" href="#import" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>禁止使用 @import</h2>
+<p>与<code>&lt;link&gt;</code>相比，<code>@import</code>较慢，增加额外的页面请求，并可能导致其他不可预见的问题。</p>
+<pre><code class="css">&lt;!-- Use link elements --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;core.css&quot;&gt;
+
+&lt;!-- Avoid @imports --&gt;
+&lt;style&gt;
+    @import url(&quot;more.css&quot;);
+&lt;/style&gt;
+</code></pre>
+
+<h2 id="_15"><a name="user-content-_15" href="#_15" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>媒体查询位置</h2>
+<p>尽量将媒体查询的位置靠近他们相关的规则。不要将他们一起放到一个独立的样式文件中，或者丢在文档的最底部。这样做只会让大家以后更容易忘记他们。这里是一个典型的案例。</p>
+<pre><code class="css">.element { ... }
+.element-avatar { ... }
+.element-selected { ... }
+
+@media (min-width: 480px) {
+    .element { ...}
+    .element-avatar { ... }
+    .element-selected { ... }
+}
+</code></pre>
+
+<h2 id="_16"><a name="user-content-_16" href="#_16" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>单条声明的声明块</h2>
+<p>在一个声明块中只包含一条声明的情况下，为了易读性和快速编辑可以考虑移除其中的换行。所有包含多条声明的声明块应该分为多行。</p>
+<p>这样做的关键因素是错误检测 - 例如，一个 CSS 验证程序显示你在 183 行有一个语法错误,如果是一个单条声明的行，那就是他了。在多个声明的情况下，你必须为哪里出错了费下脑子。</p>
+<pre><code>.span1 { width: 60px; }
+.span2 { width: 140px; }
+.span3 { width: 220px; }
+</code></pre>
+
+<h2 id="_17"><a name="user-content-_17" href="#_17" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>属性简写</h2>
+<p>尽量不使用属性简写的方式，属性简写需要你必须显式设置所有取值。常见的属性简写滥用包括:</p>
+<ul>
+<li>padding</li>
+<li>margin</li>
+<li>font</li>
+<li>background<br />
+ -border<br />
+ -border-radius</li>
+</ul>
+<p>大多数情况下，我们并不需要设置属性简写中包含的所有值。例如，HTML 头部只设置上下的 margin，所以如果需要，只设置这两个值。过度使用属性简写往往会导致更混乱的代码，其中包含不必要的重写和意想不到的副作用。</p>
+<pre><code class="css">/* Bad example */
+.element {
+    margin: 0 0 10px;
+    background: red;
+    background: url(&quot;image.jpg&quot;);
+    border-radius: 3px 3px 0 0;
+}
+
+/* Good example */
+.element {
+    margin-bottom: 10px;
+    background-color: red;
+    background-image: url(&quot;image.jpg&quot;);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+</code></pre>
+
+<h2 id="_18"><a name="user-content-_18" href="#_18" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>代码注释</h2>
+<p>代码是由人来编写和维护的。保证你的代码是描述性的，包含好的注释，并且容易被他人理解。好的代码注释传达上下文和目标。不要简单地重申组件或者 class 名称。</p>
+<h2 id="class"><a name="user-content-class" href="#class" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>class 命名</h2>
+<p>保持 class 命名为全小写，可以使用短划线（不要使用下划线和 camelCase 命名）。短划线应该作为相关类的自然间断。(例如，.btn 和 .btn-danger)。</p>
+<p>避免过度使用简写。.btn 可以很好地描述 button，但是 .s 不能代表任何元素。</p>
+<p>class 的命名应该尽量短，也要尽量明确。</p>
+<p>使用有意义的名称；使用结构化或者作用目标相关，而不是抽象的名称。</p>
+<p>命名时使用最近的父节点或者父 class 作为前缀。</p>
+<p>使用 .js-* 来表示行为(相对于样式)，但是不要在 CSS 中包含这些 class。</p>
+<h2 id="_19"><a name="user-content-_19" href="#_19" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>选择器</h2>
+<p>使用 class 而不是通用元素标签来优化渲染性能。</p>
+<p>避免在经常出现的组件中使用一些属性选择器 (例如，[class^=&rdquo;&hellip;&rdquo;])。浏览器性能会受到这些情况的影响。</p>
+<p>减少选择器的长度，每个组合选择器选择器的条目应该尽量控制在 3 个以内。</p>
+<p>只在必要的情况下使用后代选择器 (例如，没有使用带前缀 classes 的情况).</p>
+<h2 id="_20"><a name="user-content-_20" href="#_20" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>代码组织</h2>
+<p>以组件为单位组织代码。</p>
+<p>制定一个一致的注释层级结构。</p>
+<p>使用一致的空白来分割代码块，这样做在查看大的文档时更有优势。</p>
+<p>当使用多个 CSS 文件时，通过组件而不是页面来区分他们。页面会被重新排列，而组件移动就可以了。</p>
+<h2 id="_21"><a name="user-content-_21" href="#_21" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>编辑器配置</h2>
+<p>根据以下的设置来配置你的编辑器，将这些设置应用到项目的 .editorconfig 文件，来避免常见的代码不一致和丑陋的 diffs。</p>
+<ul>
+<li>使用四个空格的缩进。</li>
+<li>在保存时删除尾部的空白字符。</li>
+<li>设置文件编码为 UTF-8。</li>
+<li>在文件结尾添加一个空白行。</li>
+</ul>
+<h1 id="js"><a name="user-content-js" href="#js" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>JS 规范</h1>
+<h2 id="_22"><a name="user-content-_22" href="#_22" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>语法</h2>
+<p>使用四个空格的缩进，这是保证代码在各种环境下显示一致的唯一方式。</p>
+<p>声明之后一律以分号结束， 不可以省略</p>
+<p>完全避免 == != 的使用， 用严格比较条件 === !==</p>
+<p>eval 非特殊情况， 禁用！！！</p>
+<p>with 非特殊情况， 禁用！！！</p>
+<p>单行长度，理论上不要超过80列，不过如果编辑器开启&rdquo;自动换行&rdquo;的话可以不考虑单行长度</p>
+<p>接上一条，如果需要换行，存在操作符的情况，一定在操作符后换行，然后换的行缩进4个空格</p>
+<p>这里要注意，如果是多次换行的话就没有必要继续缩进了，比如说下面这种就是最佳格式。</p>
+<pre><code>if (typeof qqfind === &quot;undefined&quot; ||
+    typeof qqfind.cdnrejected === &quot;undefined&quot; ||
+    qqfind.cdnrejected !== true) {
+    url = &quot;http://pub.idqqimg.com/qqfind/js/location4.js&quot;;
+} else {
+    url = &quot;http://find.qq.com/js/location4.js&quot;;
+}
+</code></pre>
+
+<h2 id="_23"><a name="user-content-_23" href="#_23" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>空行</h2>
+<p>方法之间加</p>
+<p>单行或多行注释前加</p>
+<p>逻辑块之间加空行增加可读性</p>
+<h2 id="_24"><a name="user-content-_24" href="#_24" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>变量命名</h2>
+<p>标准变量采用驼峰标识</p>
+<p>使用的ID的地方一定全大写</p>
+<p>使用的URL的地方一定全大写, 比如说 reportURL</p>
+<p>涉及Android的，一律大写第一个字母</p>
+<p>涉及IOS的，一律大写</p>
+<p>常量采用大写字母，下划线连接的方式</p>
+<p>构造函数，大写第一个字母</p>
+<pre><code>var thisIsMyName;
+
+var goodID;
+
+var AndroidVersion;
+
+var iOSVersion;
+
+var MAX_COUNT = 10;
+
+function Person(name) {
+    this.name = name
+}
+</code></pre>
+
+<h2 id="null"><a name="user-content-null" href="#null" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>null的使用场景</h2>
+<p>初始化可能以后分配对象值的变量</p>
+<p>与一个可能或可能没有对象值的初始化变量进行比较</p>
+<p>传入一个预期对象的函数</p>
+<p>从预期对象的函数返回</p>
+<h2 id="null_1"><a name="user-content-null_1" href="#null_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>不适合null的使用场景</h2>
+<p>不要使用null来测试是否提供参数</p>
+<p>不要测试值为null的未初始化变量</p>
+<h2 id="undefined"><a name="user-content-undefined" href="#undefined" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>undefined使用场景</h2>
+<p>永远不要直接使用undefined进行变量判断</p>
+<p>使用字符串 &ldquo;undefined&rdquo; 对变量进行判断</p>
+<pre><code class="js">// Bad
+var person;
+console.log(person === undefined);    //true
+
+// Good
+console.log(typeof person);    // &quot;undefined&quot;
+</code></pre>
+
+<h2 id="_25"><a name="user-content-_25" href="#_25" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>对象字面量</h2>
+<pre><code class="js">// Bad
+var team = new Team();
+team.title = &quot;AlloyTeam&quot;;
+team.count = 25;
+
+// Good
+var team = {
+    title: &quot;AlloyTeam&quot;,
+    count: 25
+};
+</code></pre>
+
+<h2 id="_26"><a name="user-content-_26" href="#_26" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>数组声明</h2>
+<pre><code class="js">// Bad
+var colors = new Array(&quot;red&quot;, &quot;green&quot;, &quot;blue&quot;);
+var numbers = new Array(1, 2, 3, 4);
+
+
+// Good
+var colors = [ &quot;red&quot;, &quot;green&quot;, &quot;blue&quot; ];
+var numbers = [ 1, 2, 3, 4 ];
+</code></pre>
+
+<h2 id="_27"><a name="user-content-_27" href="#_27" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>单行注释</h2>
+<p>双斜线后，必须跟注释内容保留一个空格</p>
+<p>与下一行代码缩进保持一致</p>
+<p>可位于一个代码行的末尾，双斜线距离分号四个空格</p>
+<pre><code class="js">// Good
+if (condition) {
+    // if you made it here, then all security checks passed
+    allowed();
+}
+
+var zhangsan = &quot;zhangsan&quot;;    // 双斜线距离分号四个空格，双斜线后始终保留一个空格
+</code></pre>
+
+<h2 id="_28"><a name="user-content-_28" href="#_28" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>多行注释格式</h2>
+<p>最少三行</p>
+<p>前边留空一行</p>
+<pre><code>/**
+ * 注释内容与星标前保留一个空格
+ */
+</code></pre>
+
+<h2 id="_29"><a name="user-content-_29" href="#_29" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>何时使用多行注释格式</h2>
+<p>难于理解的代码段</p>
+<p>可能存在错误的代码段</p>
+<p>浏览器特殊的HACK代码</p>
+<p>业务逻辑强相关的代码</p>
+<p>想吐槽的产品逻辑, 合作同事</p>
+<h2 id="_30"><a name="user-content-_30" href="#_30" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>文档注释</h2>
+<p>各类标签 @param @method 等 参考 <a href="http://usejsdoc.org/">http://usejsdoc.org/</a></p>
+<p>用于：方法、构造函数、对象</p>
+<pre><code class="js">/**
+ * here boy, look here , here is girl
+ * @method lookGril
+ * @param {Object} balabalabala
+ * @return {Object} balabalabala
+ */
+</code></pre>
+
+<h2 id="_31"><a name="user-content-_31" href="#_31" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>括号对齐</h2>
+<p>标准示例 括号前后有空格，花括号起始不另换行，结尾新起一行</p>
+<p>花括号必须要，即使内容只有一行</p>
+<p>涉及 if for while do&hellip;while try&hellip;catch&hellip;finally 的地方都必须使用花括号，即使内容只有一行</p>
+<h2 id="if-else"><a name="user-content-if-else" href="#if-else" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>if else 前后留有空格</h2>
+<pre><code>if (condition) {
+    doSomething();
+} else {
+    doSomethingElse();
+}
+</code></pre>
+
+<h2 id="switch"><a name="user-content-switch" href="#switch" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>switch</h2>
+<p>switch和括号之间有空格，case需要缩进，break之后跟下一个case中间留一个空白行</p>
+<p>花括号必须要， 即使内容只有一行。</p>
+<p>switch 的 falling through 一定要有注释特别说明，no default 的情况也需要注释特别说明况</p>
+<pre><code class="js">switch (condition) {
+    case &quot;first&quot;:
+        // code
+        break;
+
+    case &quot;second&quot;:
+        // code
+        break;
+
+    default:
+    // code
+}
+</code></pre>
+
+<h2 id="for"><a name="user-content-for" href="#for" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>for</h2>
+<p>普通for循环, 分号后留有一个空格， 判断条件等内的操作符两边不留空格</p>
+<p>前置条件如果有多个，逗号后留一个空格</p>
+<p>for-in 一定要有 hasOwnProperty 的判断， 否则 JSLint 或者 JSHint 都会有一个 warn</p>
+<pre><code class="js">for (var i=0, len=values.length; i&lt;len; i++) {
+    process(values[i]);
+}
+
+
+var prop;
+
+for (prop in object) {
+    // 注意这里一定要有 hasOwnProperty 的判断， 否则 JSLint 或者 JSHint 都会有一个 warn ！
+    if (object.hasOwnProperty(prop)) {
+        console.log(&quot;Property name is &quot; + prop);
+        console.log(&quot;Property value is &quot; + object[prop]);
+    }
+}
+</code></pre>
+
+<h2 id="_32"><a name="user-content-_32" href="#_32" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>变量声明</h2>
+<p>所有函数内变量声明放在函数内头部，只使用一个 var(多了JSLint报错)， 一个变量一行,for中的var除外</p>
+<h2 id="_33"><a name="user-content-_33" href="#_33" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>函数声明</h2>
+<p>一定先声明再使用， 不要利用 JavaScript engine的变量提升特性, 违反了这个规则 JSLint都会报 warn</p>
+<p>function declaration 和 function expression 的不同，function expression 的（）前后必须有空格，而function declaration 在有函数名的时候不需要空格，没有函数名的时候需要空格。</p>
+<p>函数调用括号前后不需要空格</p>
+<p>立即执行函数的写法, 最外层必须包一层括号</p>
+<p>&ldquo;use strict&rdquo; 决不允许全局使用， 必须放在函数的第一行， 可以用自执行函数包含大的代码段, 如果 &ldquo;use strict&rdquo; 在函数外使用， JSLint均会报错</p>
+<pre><code class="js">function doSomething(item) {
+    // do something
+}
+
+var doSomething = function (item) {
+    // do something
+}
+
+
+// Good
+doSomething(item);
+
+// Bad: Looks like a block statement
+doSomething (item);
+
+// Good
+(function() {
+    &quot;use strict&quot;;
+
+    function doSomething() {
+        // code
+    }
+})();
+</code></pre></article></body></html>
